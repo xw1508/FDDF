@@ -9,8 +9,6 @@ This repository contains a reference implementation of the core modules of **FDD
 > **"FDDF: Frequency Decomposition and Spatial-Frequency Dual-Domain Fusion Network for Multi-Spectral Pedestrian Detection"**,  
 ![Detection Results1](KASIT_BENCHMARK_01.png)
 
-![Detection Results](kaist-res4_01.png)
-
 The repository currently includes the four key building blocks of our dual domain fusion paradigm, as well as the content of data labeling, training, and data processing:
 
 - **fdfd**: Frequency-Domain Feature Decomposition Module  
