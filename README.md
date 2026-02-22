@@ -25,8 +25,7 @@ The training and detection pipeline (VGG-16 backbone + SSD detector, data loadin
 
 Some utility functions (e.g., anchor generation, evaluation scripts) follow the design of standard SSD implementations in PyTorch.
 
-dummy code1 and dummy code2 are reference codes for FDFD and FSG modules (for reference only)
-Evaluation_stcript.cpy is runnable evaluation code
+You can quickly evaluate the results by running evaluation_stcript.py
 FDDF_desult. txt is the result of this article on Kaist
 KAIST-annotation.json is a validation set label
 KASIT_SENCHMARK.jpg is a comparison chart with other methods
