@@ -9,7 +9,7 @@ This repository contains a reference implementation of the core modules of **FDD
 > **"FDDF: Frequency Decomposition and Spatial-Frequency Dual-Domain Fusion Network for Multi-Spectral Pedestrian Detection"**,  
 
 
-The full training and evaluation code (including data processing, training scripts, and model zoo) will be released **after the paper is officially accepted**. This repository currently focuses on the **two key building blocks** of our dual-domain fusion paradigm:
+The repository currently includes the four key building blocks of our dual domain fusion paradigm, as well as the content of data labeling, training, and data processing:
 
 - **fdfd**: Frequency-Domain Feature Decomposition Module  
 - **fsc**: Frequency–Spatial Domain Feature Global Co-occurrence Module
