@@ -1,32 +1,140 @@
 # FDDF
-FDDF: Frequency Decomposition and Spatial-Frequency Dual-Domain Fusion Network for Multi-Spectral Pedestrian Detection
 
-# FDDF: Frequency Decomposition and Spatial–Frequency Dual-Domain Fusion Network
+## Frequency Decomposition and Spatial--Frequency Dual-Domain Fusion Network for Multi-Spectral Pedestrian Detection
 
-This repository contains a reference implementation of the core modules of **FDDF** (Frequency Decomposition and Spatial–Frequency Dual-Domain Fusion Network) for multispectral pedestrian detection. The method is described in our paper:
+```{=html}
+<p align="center">
+```
+`<img src="figures/fddf_framework.png" width="85%">`{=html}
+```{=html}
+</p>
+```
 
-> X. Liu, G. Xie, X. Xie, and X. Xu,  
-> **"FDDF: Frequency Decomposition and Spatial-Frequency Dual-Domain Fusion Network for Multi-Spectral Pedestrian Detection"**,  
+------------------------------------------------------------------------
+
+## 📌 Overview
+
+This repository provides the reference implementation of **FDDF**
+(Frequency Decomposition and Spatial--Frequency Dual-Domain Fusion
+Network), a dual-domain fusion framework designed for multispectral
+pedestrian detection.
+
+FDDF explicitly models complementary information in:
+
+-   **Frequency domain** (low-frequency structure + high-frequency
+    details)
+-   **Spatial domain** (local-global contextual co-occurrence)
+
+Core modules:
+
+-   **FDFD** -- Frequency-Domain Feature Decomposition\
+-   **FSC** -- Frequency--Spatial Domain Global Co-occurrence Modeling
+
+The complete training and inference pipeline will be released after
+official paper acceptance.
+
+------------------------------------------------------------------------
+
+## 🧠 Method Architecture
+
+FDDF follows a dual-domain fusion paradigm:
+
+1.  RGB--Thermal feature extraction\
+2.  Frequency decomposition (low/high separation)\
+3.  Spatial-frequency global co-occurrence modeling\
+4.  Adaptive feature fusion for detection
+
+```{=html}
+<p align="center">
+```
+`<img src="figures/fddf_pipeline.png" width="80%">`{=html}
+```{=html}
+</p>
+```
+
+------------------------------------------------------------------------
+
+## 📊 Experimental Results
+
+### 🔹 Qualitative Visualization
+
+```{=html}
+<p align="center">
+```
+`<img src="figures/qualitative_results.png" width="85%">`{=html}
+```{=html}
+</p>
+```
+FDDF improves detection robustness under:
+
+-   Low illumination
+-   Occlusion
+-   Thermal noise interference
+
+------------------------------------------------------------------------
+
+### 🔹 KAIST Benchmark Comparison
+
+```{=html}
+<p align="center">
+```
+`<img src="figures/kaist_benchmark.jpg" width="75%">`{=html}
+```{=html}
+</p>
+```
+FDDF achieves competitive performance on:
+
+-   MR (Reasonable / All)
+-   Day/Night subsets
+-   Cross-modal robustness
+
+------------------------------------------------------------------------
+
+### 🔹 Training Convergence Curve
+
+```{=html}
+<p align="center">
+```
+`<img src="figures/training_curve.png" width="75%">`{=html}
+```{=html}
+</p>
+```
+Dual-domain modeling improves convergence stability and optimization
+behavior.
+
+------------------------------------------------------------------------
 
 
-The full training and evaluation code (including data processing, training scripts, and model zoo) will be released **after the paper is officially accepted**. This repository currently focuses on the **two key building blocks** of our dual-domain fusion paradigm:
+------------------------------------------------------------------------
 
-- **FDFD**: Frequency-Domain Feature Decomposition Module  
-- **FSC**: Frequency–Spatial Domain Feature Global Co-occurrence Module
-- (FSA and SDCI are conceptually included in the paper and will be released together with the complete code.)
+## ⚙️ Baseline and References
 
+Training pipeline adapted from:
 
+MLPD -- Multi-Label Pedestrian Detection (RA-L 2021)\
+https://github.com/sejong-rcv/MLPD-Multi-Label-Pedestrian-Detection.git
 
-Baseline Code and External References
+------------------------------------------------------------------------
 
-Our implementation is built on top of existing open-source multispectral pedestrian detection codebases. In particular:
+## 📄 Citation
 
-The training and detection pipeline (VGG-16 backbone + SSD detector, data loading, augmentation, and loss functions) is adapted from the official implementation of MLPD (“Multi-Label Pedestrian Detector in Multispectral Domain”) [Kim et al., RA-L 2021].https://github.com/sejong-rcv/MLPD-Multi-Label-Pedestrian-Detection.git
+If you find this work useful, please cite:
 
-Some utility functions (e.g., anchor generation, evaluation scripts) follow the design of standard SSD implementations in PyTorch.
+    @article{liu2026fddf,
+      title={FDDF: Frequency Decomposition and Spatial–Frequency Dual-Domain Fusion Network for Multi-Spectral Pedestrian Detection},
+      author={Liu, Xiaowei and Xie, Guang and Xie, Xiangyu and Xu, Xiaodong},
+      journal={IEEE Transactions on ...},
+      year={2026}
+    }
 
-dummy code1 and dummy code2 are reference codes for FDFD and FSG modules (for reference only)
-Evaluation_stcript.cpy is runnable evaluation code
-FDDF_desult. txt is the result of this article on Kaist
-KAIST-annotation.json is a validation set label
-KASIT_SENCHMARK.jpg is a comparison chart with other methods
+------------------------------------------------------------------------
+
+## 📜 License
+
+Released for academic research only.
+
+For commercial use, please contact the authors.
+
+------------------------------------------------------------------------
+
+*Generated on 2026-02-22*
