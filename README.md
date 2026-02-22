@@ -61,7 +61,7 @@ FDDF follows a dual-domain fusion paradigm:
 ```{=html}
 <p align="center">
 ```
-`<img src="figures/qualitative_results.png" width="85%">`{=html}
+`<img src="/kaist-res4.pdf" width="85%">`{=html}
 ```{=html}
 </p>
 ```
