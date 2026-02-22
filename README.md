@@ -11,10 +11,10 @@ This repository contains a reference implementation of the core modules of **FDD
 
 The full training and evaluation code (including data processing, training scripts, and model zoo) will be released **after the paper is officially accepted**. This repository currently focuses on the **two key building blocks** of our dual-domain fusion paradigm:
 
-- **FDFD**: Frequency-Domain Feature Decomposition Module  
-- **FSC**: Frequency–Spatial Domain Feature Global Co-occurrence Module
-- (FSA and SDCI are conceptually included in the paper and will be released together with the complete code.)
-
+- **fdfd**: Frequency-Domain Feature Decomposition Module  
+- **fsc**: Frequency–Spatial Domain Feature Global Co-occurrence Module
+- **sdci**: Spatial-Domain Cooperative Integration Module
+- **fsa**:Frequency Spectrum Attention Operation Module
 
 
 Baseline Code and External References
